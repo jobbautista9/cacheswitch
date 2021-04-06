@@ -1,9 +1,12 @@
-box.switch {
-  -moz-binding:url('switch.xbl#switchBinding');
+/* This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+box.CacheSwitch-Switch {
+  -moz-binding:url('chrome://cacheswitch/content/switch.xbl#switchBinding');
   cursor:pointer;
 }
 
-box.switch .scale-slider {
+box.CacheSwitch-Switch .scale-slider {
   -moz-appearance:none !important;
   background:url('slider-background.png') repeat-y 50% 50%;
   border:1px solid #444;
@@ -11,7 +14,7 @@ box.switch .scale-slider {
   height:16px;
 }
 
-box.switch .scale-thumb {
+box.CacheSwitch-Switch .scale-thumb {
   -moz-appearance:none !important;
   background-image:url('thumb-background.gif');
   background-repeat:repeat-x;

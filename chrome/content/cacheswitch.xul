@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<?xml-stylesheet href="chrome://cacheswitch/skin/switch.css" type="text/css"?>
+
+<!DOCTYPE overlay >
+<overlay id="CacheSwitch-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="cacheswitch.js"/> 
+
+  <statusbar id="status-bar">
+    <statusbarpanel context="CacheSwitch-StatusContextMenu">
+      <label class="statusbarpanel-text" id="CacheSwitch-Label">Cache</label>
+      <box class="CacheSwitch-Switch" id="CacheSwitch-Switch"/>
+    </statusbarpanel>
+    <menupopup id="CacheSwitch-StatusContextMenu">
+        <menuitem label="Show Label" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox"/>
+        <menuseparator/>
+        <menuitem name="CacheSwitch-ClearCache" label="Clear Cache" id="CacheSwitch-ClearCacheMenuItem"/>
+    </menupopup>
+  </statusbar>
+
+</overlay>
