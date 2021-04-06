@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://cacheswitch/locale/cacheswitch.dtd">
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
      License, v. 2.0. If a copy of the MPL was not distributed with this
      file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <?xml-stylesheet href="chrome://cacheswitch/skin/switch.css" type="text/css"?>
 
-<!DOCTYPE overlay >
 <overlay id="CacheSwitch-overlay"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
@@ -12,13 +12,13 @@
 
   <statusbar id="status-bar">
     <statusbarpanel context="CacheSwitch-StatusContextMenu">
-      <label class="statusbarpanel-text" id="CacheSwitch-Label">Cache</label>
+      <label class="statusbarpanel-text" id="CacheSwitch-Label">&cacheswitch.label;</label>
       <box class="CacheSwitch-Switch" id="CacheSwitch-Switch"/>
     </statusbarpanel>
     <menupopup id="CacheSwitch-StatusContextMenu">
-        <menuitem label="Show Label" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox"/>
+        <menuitem label="&cacheswitch.showlabel;" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox"/>
         <menuseparator/>
-        <menuitem name="CacheSwitch-ClearCache" label="Clear Cache" id="CacheSwitch-ClearCacheMenuItem"/>
+        <menuitem name="CacheSwitch-ClearCache" label="&cacheswitch.clearcache;" id="CacheSwitch-ClearCacheMenuItem"/>
     </menupopup>
   </statusbar>
 
