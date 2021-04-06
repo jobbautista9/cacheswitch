@@ -7,6 +7,7 @@
   <em:id>{e90888b8-ee55-452b-8492-f2d54e8a9ab5}</em:id>
   <em:name>CacheSwitch</em:name>
   <em:version>0.6.2</em:version>
+  <em:type>2</em:type>
   <em:description>Status bar toggle for the browser cache</em:description>
   <em:creator>Job Bautista</em:creator>
   <em:contributor>Pau Santesmasses</em:contributor>
