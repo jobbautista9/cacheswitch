@@ -2,5 +2,9 @@
      License, v. 2.0. If a copy of the MPL was not distributed with this
      file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!ENTITY cacheswitch.label "Cache">
-<!ENTITY cacheswitch.showlabel "Show Label">
+<!ENTITY cacheswitch.label.memory "Mem">
+<!ENTITY cacheswitch.label.disk "Disk">
+<!ENTITY cacheswitch.showlabel "Show Main Label">
+<!ENTITY cacheswitch.showlabel.memory "Show Memory Cache Label">
+<!ENTITY cacheswitch.showlabel.disk "Show Disk Cache Label">
 <!ENTITY cacheswitch.clearcache "Clear Cache">

@@ -8,17 +8,23 @@
 <overlay id="CacheSwitch-overlay"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script src="cacheswitch.js"/> 
+  <script src="switch.js"/>
+  <script src="clearcache.js"/>
 
   <statusbar id="status-bar">
-    <statusbarpanel context="CacheSwitch-StatusContextMenu">
-      <label class="statusbarpanel-text" id="CacheSwitch-Label">&cacheswitch.label;</label>
-      <box class="CacheSwitch-Switch" id="CacheSwitch-Switch"/>
+    <statusbarpanel context="CacheSwitch-StatusContextMenu" onload="getCurrentPrefs();">
+      <label class="statusbarpanel-text" id="CacheSwitch-Label" hidden="false">&cacheswitch.label;:</label>
+      <label class="statusbarpanel-text" id="CacheSwitch-Label-Memory" hidden="false">&cacheswitch.label.memory;</label>
+      <checkbox id="CacheSwitch-Switch-Memory" checked="true" oncommand="setMemPref();"/>
+      <label class="statusbarpanel-text" id="CacheSwitch-Label-Disk" hidden="false" oncommand="setDiskPref();">&cacheswitch.label.disk;</label>
+      <checkbox id="CacheSwitch-Switch-Disk" checked="true" oncommand="setDiskPref();"/>
     </statusbarpanel>
     <menupopup id="CacheSwitch-StatusContextMenu">
-        <menuitem label="&cacheswitch.showlabel;" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox"/>
+        <menuitem label="&cacheswitch.showlabel;" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox" checked="true" oncommand="setLblPref();"/>
+        <menuitem label="&cacheswitch.showlabel.memory;" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox" checked="true" oncommand="setMemLblPref();"/>
+        <menuitem label="&cacheswitch.showlabel.disk;" id="CacheSwitch-ToggleTextLabelMenuItem" type="checkbox" checked="true" oncommand="setDiskLblPref();"/>
         <menuseparator/>
-        <menuitem name="CacheSwitch-ClearCache" label="&cacheswitch.clearcache;" id="CacheSwitch-ClearCacheMenuItem"/>
+        <menuitem name="CacheSwitch-ClearCache" label="&cacheswitch.clearcache;" id="CacheSwitch-ClearCacheMenuItem" oncommand="clearCache();"/>
     </menupopup>
   </statusbar>
 

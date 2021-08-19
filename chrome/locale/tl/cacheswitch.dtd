@@ -2,5 +2,9 @@
      License, v. 2.0. If a copy of the MPL was not distributed with this
      file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!ENTITY cacheswitch.label "Cache">
-<!ENTITY cacheswitch.showlabel "Ipakita ang Tatak">
+<!ENTITY cacheswitch.label.memory "Mem">
+<!ENTITY cacheswitch.label.disk "Disk">
+<!ENTITY cacheswitch.showlabel "Ipakita ang Pangunahing Tatak">
+<!ENTITY cacheswitch.showlabel.memory "Ipakita ang Tatak pang-Memory Cache">
+<!ENTITY cacheswitch.showlabel.disk "Ipakita ang Tatak pang-Disk Cache">
 <!ENTITY cacheswitch.clearcache "Alisin ang Cache">
